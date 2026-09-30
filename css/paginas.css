@@ -1,0 +1,151 @@
+
+.pagina {
+    max-width: 1100px;
+    margin: 0 auto;
+    padding: 32px 20px;
+}
+
+.pagina h2 { margin-bottom: 8px; }
+
+.intro {
+    margin-bottom: 28px;
+    max-width: 65ch;
+}
+
+/* ---------- CURSOS ---------- */
+.cuadricula_cursos {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(240px, 1fr));
+    gap: 20px;
+}
+
+.card {
+    background: #fff;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+}
+
+.card_img {
+    width: 100%;
+    height: 150px;
+    object-fit: cover;
+    display: block;
+}
+
+.card_cuerpo {
+    padding: 14px;
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+}
+
+.card_cuerpo h3 { font-size: 1rem; }
+
+.card_inst {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    font-size: 0.85rem;
+}
+
+.logo_inst {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 24px;
+    height: 24px;
+    border-radius: 50%;
+    background: #1a56db;
+    color: #fff;
+    font-weight: 700;
+    font-size: 0.75rem;
+}
+
+.card_instructor { font-size: 0.85rem; color: #555; }
+.card_meta { font-size: 0.8rem; color: #555; }
+.estrellas { color: #f5a623; letter-spacing: 1px; }
+
+.tipo {
+    display: inline-block;
+    padding: 2px 8px;
+    border-radius: 999px;
+    font-size: 0.75rem;
+    font-weight: 600;
+}
+.tipo_cert { background: #e3f4e8; color: #1e6b36; }
+.tipo_esp  { background: #ece6fb; color: #4b2ea6; }
+
+/* ---------- MENTORÍA ---------- */
+.bloque { margin-bottom: 32px; }
+.bloque h3 { margin-bottom: 10px; }
+.bloque p { max-width: 70ch; margin-bottom: 10px; }
+
+.reglas { padding-left: 22px; max-width: 70ch; }
+.reglas li { margin-bottom: 8px; }
+
+.video {
+    position: relative;
+    width: 100%;
+    max-width: 720px;
+    aspect-ratio: 16 / 9;
+}
+.video iframe {
+    position: absolute;
+    inset: 0;
+    width: 100%;
+    height: 100%;
+    border: 0;
+}
+
+/* ---------- INSCRIPCIÓN ---------- */
+.formulario {
+    max-width: 560px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.formulario fieldset {
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    padding: 16px;
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+.formulario legend { padding: 0 8px; font-weight: 600; }
+
+.formulario label,
+.formulario .etiqueta { font-weight: 500; font-size: 0.9rem; }
+
+.formulario input[type="text"],
+.formulario input[type="email"],
+.formulario input[type="tel"],
+.formulario input[type="date"],
+.formulario select,
+.formulario textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #aaa;
+    border-radius: 6px;
+    font: inherit;
+    margin-bottom: 6px;
+}
+
+.formulario input:focus,
+.formulario select:focus,
+.formulario textarea:focus {
+    outline: 2px solid #1a56db;
+    outline-offset: 1px;
+}
+
+.opciones { display: flex; gap: 20px; margin-bottom: 6px; }
+.opciones label { font-weight: 400; }
+
+.acepto { display: flex; gap: 8px; align-items: center; font-weight: 400; }
+
+button#btn_accion { cursor: pointer; border: 0; align-self: flex-start; }
